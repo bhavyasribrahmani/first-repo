@@ -1,0 +1,48 @@
+result_left_shift = 2 << 2
+print("bitwise left shift",result_left_shift)
+result_right_shift = 2 >> 2
+print("bitwise right shift",result_right_shift)
+a = 56 >> 2
+b = 32 << 2
+print(a)
+num1 = int(input())
+num2 = int(input())
+print("Sum:",num1+num2,sep=(""))
+print(f"Sum:{num1+num2}")
+r = int(input())
+a = (3.14*r*r)
+print("Area of the Circle:",float(3.14*r*r),sep=(""))
+print("Area of the Circle:",3.14*r*r,sep=(""))
+print(f"Area of the circle:{a}")
+print("Area of the circle:",3.14*r**2,sep=(""))
+a = int(input("give value for a: "))
+b= int(input("give value for b: "))
+c= int(input("give value for c: "))
+d = b**2 -  4*a*c
+root1 = (-b + (d**(0.5)))/2*a
+root2 = (-b - (d**(0.5)))/2*a
+print(f"Roots:({root1},{root2})")
+#swap
+a = int(input())
+b = int(input())
+temp = a
+a = b
+b = temp
+print("a=",a,"b=",b)
+#swap in other method
+a = int(input("Give a:"))
+b = int(input("Give b:"))
+a = a+b 
+b = a-b
+a = a-b
+print(f"a={a}",f"b={b}")
+
+#vowel counter
+s = input()
+s2 = s.lower()
+a = s2.count('a')
+e = s2.count('e')
+i = s2.count('i')
+o = s2.count('o')
+u = s2.count('u')
+print(f"Number of vowels:{a+e+i+o+u}")
