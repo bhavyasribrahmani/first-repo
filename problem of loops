@@ -1,0 +1,50 @@
+# print numbers 1toN
+n = int(input("Give n Value:"))
+i = 1
+for i in range(1,n+1):
+   print(i)
+
+while i<=n:
+   print(i)
+   i += 1
+
+#calculate the sum of N natural numbers
+sum = 0
+while i<=n:
+   sum = i + sum
+   i += 1
+   print(sum)
+
+# print even numbers from 1to N
+while i<=n:
+   if i%2==0:
+     print(i)
+   i+= 1
+
+# print odd numbers from 1 to N
+while i<=n:
+   if i%2!=0:
+     print(i)
+   i+=1
+
+# Multiplication table of a number
+while i<=n:
+       for j in range(1,11):
+            print(f"{i}*{j}={i*j}")
+       i +=1
+
+#same in other way
+while i<=10:
+      print(f"{n}x{i}={n*i}")
+      i +=1
+
+#same
+for i in range(1,11):
+   print(f"{n}x{i}={n*i}")
+
+# Calculate the factorial of a number(so important one)
+factorial = 1
+while n>0:
+   factorial = factorial * n
+   n-=1
+print('Factorial of 5:',factorial)
