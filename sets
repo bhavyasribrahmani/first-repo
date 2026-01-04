@@ -1,0 +1,89 @@
+set1 = {int(a) for a in input().split(',')}
+set2 = {int(b) for b in input().split(',')}
+uSet = set1.union(set2)
+iSet = set1.intersection(set2)
+print(uSet,iSet)
+#Count Unique Names
+S=input()
+s=S.split()
+l1=set(s)
+k=len(l1)
+print(k)
+#Print Names 
+S=input()
+s=S.split()
+s=set(s)
+s=sorted(s)
+for i in s:
+    print(i)
+#Checking
+a=input()
+a=a.split()
+b=input()
+c= b in a
+print(c)
+#Convert all into sets
+a=input()
+a=a.split()
+
+a=set(a)
+a=sorted(a)
+a=" ".join(a)
+print(a)
+#Adding all
+a1=input()
+a=a1.split()
+a=set(a)
+b1=input()
+b=b1.split()
+a.update(b)
+a=sorted(a)
+a=" ".join(a)
+print(a)
+#Removing Element
+a=set(input().split())
+b=input()
+c=b in a
+if c:
+    a.remove(b)
+    d = sorted(a)
+    print(*d)
+else:
+    print("string not found in the set")
+    d = sorted(a)
+    print(*d)
+#Intersection of Two Sets
+a= set(input().split())
+b= set(input().split())
+c=a&b
+c=sorted(c)
+print(*c)
+#Check Subset of Two Sets
+a=set(input().split())
+b= set(input().split())
+c=a.issubset(b)
+if c:
+    print("True")
+else:
+    print("False")
+#Unique Names
+a=input().split()
+b=input().split()
+a=set(a)
+b=set(b)
+c=b.issubset(a)
+if c:
+    print("True")
+else:
+    print("False")
+#Gifts Exchange
+a=input().split()
+b=input().split()
+a=set(a)
+b=set(b)
+c=a&b
+if c:
+    c=sorted(c)
+    print(*c)
+else:
+    print("NO GIFTS.")
