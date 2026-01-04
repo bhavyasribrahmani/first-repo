@@ -1,0 +1,35 @@
+def add_num(a,b):
+    return a+b
+r = add_num(5,3)
+print(r)
+def n(g,f):
+    return g+f
+t = n(13,24)
+print(t)
+def s(o,p):
+    return o+p
+e = s(78,63)
+print(e)
+def i(a,b):
+    return a+b
+w = i(188,299)
+print(w)
+
+def greet_user(name, greeting="Hello"):
+    return greeting+","+name+"!"
+greeting1= greet_user("Bob")
+greeting2= greet_user("charlie","Hi")
+print(greeting1)
+print(greeting2)
+
+a = int(input())
+b = int(input())
+def num(a,b):
+    sum=a+b
+    print("Sum:",sum,sep=(""))
+num(a,b)
+
+r = int(input("radius:"))
+def area(r):
+    print("Area of the circle:",(22/7)*r**2)
+area(r)
