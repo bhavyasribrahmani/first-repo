@@ -1,0 +1,37 @@
+l = [10,20,30,40,50]
+r =  0
+for i in l:
+    r = r + i
+print(r)
+sum = 0
+for i in range(2,10):
+    i%3 != 0
+    sum += i
+    print(sum)
+l = [15,2,7,25,10]
+l.sort()
+print(l)
+print(len(l))
+for i in l:
+    i = l[0]
+    for j in l:
+      j = l[len(l)-1]
+print("Maximum:",j)
+print("Minimum:",i)
+#hard method
+p = input().split(",")
+l = [int(items) for items in p]
+newl = []
+for i in l:
+    if i in newl:
+        continue
+    else:
+        newl.append(i)
+
+print(newl)
+# easy method
+l =[int(b) for b in p]
+s = set(l)
+kl = list(s)
+kl.sort()
+print(kl)
