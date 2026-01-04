@@ -1,0 +1,11 @@
+a = int(input("Marks in Maths:"))
+b = int(input("Marks in Science:"))
+c = int(input("Marks in English:"))
+print(f"Total Marks: {a+b+c}")
+Total_marks = a+b+c
+avg = (a+b+c)/3
+print("Average Marks:",avg)
+if Total_marks > 250:
+    print("Grade:A")
+else:
+    print("Grade:B")
