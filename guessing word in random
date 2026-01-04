@@ -1,0 +1,54 @@
+print("welcome! to guessing word,there are 12 chances to guess word")
+name = input("give your name:")
+print("Hello,"+ name,"\n Lets START")
+import random
+l3words = ['mat','fat','fun','cat','bat','leo','gun','pot','hot','sun','one','pen','hat','dam','hen','cup','pan','man','fan']
+word = random.choice(l3words)
+t = 12
+c = word[0]
+d = word[1]
+e = word[2]
+b = 0
+while b<=t:
+    b+=1
+    g = input("guess a character:")
+    if b==6:
+        print("let use a hint to guess the word by using first letter of word:",c)
+    elif b==10:
+        print("let use hint to guess the word by using second letter of the word:",d)
+    elif g==c:   
+        print('your character is in first place of word')
+        guess = input("guess the word by this letter:")
+        if guess==word:
+            print("congrats it is correct word")
+            break
+        else:
+            print("try again")
+    elif g==d:
+        print("your character is in second place of word")
+        guess = input("guess the word by this letter:")
+        if guess==word:
+            print("congrats it is correct word")
+            break
+        else:
+            print("try again")
+    elif g==e:
+        print("your character is in third place of word")
+        guess = input("guess the word by this letter:")
+        if guess==word:
+            print("congrats it is correct word")
+            break
+        else:
+            print("try again")
+    elif g==c or g==d or g==e:
+        print("you are almost near to word now guess next")
+    elif g==c and g==d and g==e:
+        print("you got it",c,d,e)
+        print("congrats its correct word")
+        break
+    elif b==t+1:
+        print("better luck next time all chances are over.")
+        print("in this game the correct word is",word)
+    else:
+        print("try again")
+    
