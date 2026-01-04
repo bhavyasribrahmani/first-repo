@@ -1,0 +1,15 @@
+temp = int(input("Enter temperature:"))
+Units = input("Enter Units(K or F or C):")
+if Units == 'C':
+    F = temp*(9/5) +32
+else:
+    F = temp*(5/9) - 32
+
+print(f"Temperature in Fahrenheit:{F}F")
+
+if Units == 'C':
+    K = 273+temp
+else:
+    K = 273-temp
+
+print(f"Temperature in Kelvin:{K}K")
