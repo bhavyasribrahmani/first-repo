@@ -1,0 +1,44 @@
+my_dict = {'name:': 'John' , 'age:': '31','city:':'new york'}
+for i,j in my_dict.items():
+    print(i,j)
+my_dict = {}
+a = input("give Name:")
+b = int(input("give age:"))
+c= input("city:")
+
+my_dict["name"] = a
+my_dict["age"] = b
+my_dict["city"] = c
+my_dict["age"] = 30
+print(my_dict)
+# problem 1
+N= int(input())
+e={}
+c1=0
+for i in range(N):
+    ID=input()
+    product_name=input()
+    category=input()
+    R=int(input())
+    for j in range(R):
+        c=input().split()
+        c1+=int(c[1])
+    d=c1/R
+    e[product_name]=d  
+    c1=0
+a=max(e.values())
+b=min(e.values())
+
+if a==b:
+   a1=list(e.keys())
+   a=a1[0]
+   b=a1[0]
+else:
+    e1={}
+    for x,y in e.items():
+        e1[y]=x
+    a=e1[a]
+    b=e1[b]
+
+f={'summary':e,'highest_avg_product':a,'lowest_avg_product':b}
+print(f)
