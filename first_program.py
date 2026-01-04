@@ -1,38 +1,126 @@
-# own logic,vision version 
-# # first problem
-print("1.")
-a = 2034785
-b = 1999999
+char_a = ''
+
+ascii_a = ord(char_a)
+
+print(ascii_a)
+
+a = 105
+
+ascii_a = chr(a)
+
+print(ascii_a)
+
+ascii_a = 75
+character = chr(ascii_a)
+print("character of ASCII value 75 is", character)
+a = 10
+b = 20
 c = a+b
-print("total value of c after adding a & b:",c)
-d = 756480
-e = c+d
-print("the final result after all operations:",e)
+print(c)
+a = 3//2
+b = 2//3
+print(b)
+print("prasad")
+a = 74
+ascii_a = chr(a)
+print(ascii_a)
+char_a = 'D'
+ascii_a = ord(char_a)
+print(ascii_a)
+l = 2
+a = 12*l
+b = 5*l
+c = 25
+d = a**2
+print(d+b-c)
+#Integer Division (floor division)
+i = 10
+j = 2
+result_integer_division = i // j
+print("integer Division(Floor Division):",result_integer_division)
+# Module (Remainder)
+k = 10
+l = 3
+result_modulo = k % l
+print("Module(Remainder):",result_modulo)
+A = 10*a
+B = 2*a
+C = A**2
+print(C+B+A)
+# Exponentiation
+m = 3
+n = 2
+result_exponentiation = m ** n
+print("Exponentiation",result_exponentiation)
+'''rabbit runs fast,
+tutoise walk in slow manner,
+but in race tutoise win'''
+#strings
+str = "PYTHON"
+print(str[0])
+print(str[-2])
+print(str[2])
+print(str[3])
+print(str[4])
+print(str[-4])
 print(" ")
-# second problem
-print("2.")
-t = 9
-y = 3*t
-z = 5*y + 15
-print("the value of y:",y)
-print("the value of z:",z)
+#string slicing exercise
+s = 'hello world'
+print(s[1])
+print(s[-1])
+print(s[1:3])
+print(s[1:-1])
+print(s[:3])
+print(s[2:])
+print(s[:-1])
+print(s[::2])
+print(s[1::2])
+print(s[::-1])
 print(" ")
-# third problem:if i double the number of pens in my backpack and add 5,i get 23.so how many pens do i have in my backpack?
-print("3.")
-t = 23
-u = t-5
-r = 2*u
-print("the number of pens in my backpack:",r)
+# string concatenation
+first_name = "John"
+last_name = "Doe"
+full_name = first_name + " " + last_name
+print(full_name)
 print(" ")
-#fourth problem:89 chocolates shared within 7 members.how many complete chocolates do each get?
-print("4.")
-d = 89
-e = 89 // 7
-print("complete chocolates one get after sharing:",int(e))
+#string Length
+#example:1
+string1 = "Coding is fun!"
+print(len(string1))
+#example:2
+string2 = "Hello, World"
+print(len(string2))
+#example:3
+string3 = "abcdefghijk"
+print(len(string3))
+#example:4
+string4 = "The quick brown fox jumps over the lazy dog."
+print(len(string4))
 print(" ")
-#fifth problem:i do have 55% pizza left after sharing it with my 7friends but mine is double then others.how much percentage of pizza left after distributing equally between my friends?
-print("5.")
-a = 100
-b = 55
-c =(100 -55)%7
-print("amount of pizza left:",c)
+#string methods
+s = "Hello, World"
+#Convert the string to uppercase
+print(s.upper())
+#Convert the string to lowercase
+print(s.lower())
+#Remove leading and trailing whitespaces from the string
+print(s.strip())
+#Replace all occurrences of 'o' with 'x' in the string
+print(s.replace('o','x'))
+#Count the number of occurrence 'a' in the string
+print('abracadabra'.count('a'))
+print(" ")
+#String Formatting
+name = "Alice"
+age = 30
+# using the '%' operator for string formattiing (old-style)
+print("My name is %s and Iam %d years old."%(name, age))
+# using the 'formate()' method for string formatting
+print("My name is {} and I am {} years old.".format(name, age))
+#using f-springs (formatted string literals)for string formatting(python)
+print(f"My name is {name} and I am {age} years old.")
+print(" ")
+#name = "bhavya"
+#age = 17
+#print("My name is %e and I am %a years old."%(name, age))
+#school
