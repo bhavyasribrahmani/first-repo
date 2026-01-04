@@ -1,0 +1,32 @@
+candies = int(input())
+
+for i in range(1,candies):
+    print("Give a candy to friend")
+
+
+print(" ")
+while candies > 0:
+    print("Give a candy to friend")
+
+    candies -= 1
+#tables
+for i in range(2,9):
+    for j in range(1,11):
+       print(f"{i}*{j}={i*j}")
+
+#break
+candies = int(input())
+for i in range(1,candies):
+    print("give a candy to friend")
+    if candies -i == 5:
+       print("stop giving candies")
+       break 
+
+#continue
+candies = int(input())
+for i in range(candies):
+        print("give this to anyone")
+        if i== 6:
+         print("dont give this one to anyone")
+        continue
+print("give to a friend")
