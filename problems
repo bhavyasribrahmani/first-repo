@@ -1,0 +1,8 @@
+n1 = int(input("number1="))
+n2 = int(input("number2="))
+l = n1*n2
+m = n1 + n2
+if l <=1000:
+    print(f"The result is {l}")
+else:
+    print(f"The result is {m}")
