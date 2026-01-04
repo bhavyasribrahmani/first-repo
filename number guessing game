@@ -1,0 +1,44 @@
+import random
+print("Welcome! to number guessing game here you have total 10 chances to guess the number")
+name = input("give your name:")
+print("Hello,"+ name + " Ready to play this game")
+print("Lets START")
+print('give a low range value:')
+low = int(input())
+print('give a high range value:')
+high = int(input())
+print(f"Guess number in range {low,high}")
+c = 10
+m = range(low,high)
+r = random.choice(m)
+g = 0
+while g<c+1:
+    g+=1
+    guess = int(input())
+    if guess==r:
+        print(f"Congratulatons,your guess is correct in {g} chance")
+        break
+    elif g==c:
+       if guess==r:
+           print("congratulations,it is correct")
+       elif guess<r:
+           print("it is too low")
+           print("your chances are over,Better luck next time")
+           print("Answer is",r)
+       elif guess>r:
+           print("it is too high")
+           print("your chances are over,better luck next time")
+           print("Answer is",r)
+       else:
+           print("its not correct")
+           print("your chances are over,Better luck next time")
+           print("Answer is",r)
+       break
+    elif guess not in range(low,high):
+           print("it is not in given range,error")
+    elif guess<r:
+        print("it is too low")
+    elif guess>r:
+        print("it is too high")
+    else:
+        print("error")
